@@ -1,0 +1,43 @@
+.root {
+
+}
+
+* {
+    background-color: dimgrey;
+}
+
+header {
+    font-size:xx-large;
+}
+
+nav {
+    display: flex;
+    justify-content:right;
+    min-width: 300px;
+  }
+
+nav a {
+    color: crimson;
+}
+
+nav a:hover {
+    color:
+  }
+
+h1 {
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:gold;
+}
+
+
+
+
+
+/* I WANT TO USE SOMETHING LIKE THIS
+
+a[href$=".css"]::after {
+    content: "📝"
+  }
+
+  */
