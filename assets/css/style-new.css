@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+    color: darkorange;
+    border: 2px solid darkorange;
+    min-height: 100vh;
+}
+
+header {
+    border: 2px solid cornflowerblue;
+}
+
+main {
+    border: 2px solid cornflowerblue;
+    flex-grow: 1;
+    
+}
+
+footer {
+    border: 2px solid cornflowerblue;
+}
