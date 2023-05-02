@@ -99,18 +99,30 @@ h2 {
 }
 
 footer {
+    flex-grow: 1;
     display: flex;
     justify-content: center;
+    justify-items: bottom;
     align-content: space-between;
     padding: 25px;
-
+    text-align: bottom;
+    align-items: bottom;
+    border: 2px solid red
 }
 
 footer img {
     width: 45px;
     height: 45px;
+    align-items: bottom;
+    align-content: bottom;
 }
 
 h3 {
-    vertical-align: bottom;
+    display: flex;
+    justify-content: bottom;
+    height: 100%;
+    align-items: bottom;
+    align-content: bottom;
+    border: 2px solid red;
+
 }
