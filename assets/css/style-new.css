@@ -2,7 +2,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: steelblue;
+    background-image: url(../background.png);
+    background-position: fixed;
 }
 
 header {
@@ -14,11 +15,17 @@ header {
 }
 
 h1 {
-    font-family:'Courier New', Courier, monospace;
-    font-size: xx-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 65px;
+    font-style: italic;
     display: flex;
     justify-content: center;
-    padding: 25px;
+    padding-top: 40px;
+}
+
+header h1:hover {
+    color: hotpink;
 }
 
 nav {
@@ -30,37 +37,76 @@ nav {
     align-items: end;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
 ul {
     display: flex;
     gap: 20px;
-    font-size:x-large;
+    font-size: 35px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    padding-right: 20px;
+    font: bold;
 }
 
+/*a {
+    text-decoration: none;
+    color: black;
+}
+*/
+a {
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 hotpink;
+    color: hotpink;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+
 ul a:hover {
-    color:hotpink;
+    box-shadow: inset 170px 0 0 0 hotpink;
+    color: black;
 }
 
 main {
     flex-grow: 1;
+    padding-top: 35px;
+    
+}
+
+#about-me {
+    display: inline;
+
+    
+}
+
+p {
+    padding-left: 350px;
+    border: 2px solid red;
+    width: 65%;
+}
+
+p:hover {
     
 }
 
 h2 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: large;
+    font-size: xx-large;
     text-indent: 75px;
-    padding-top: 30px;
+    padding-top: 60px;
+    display: inline-flex;
+    justify-content: start;
+}
+
+h2:hover {
+    text-decoration: underline;
+}
+
+#my-work {
+    display: inline;
+    
 }
 
 .project-image {
-   width: 100%
+   width: 100%;
 }
 
 #grid {
@@ -96,6 +142,7 @@ h2 {
 
 #big-proj{
     border: 3px solid blue;
+    padding-bottom: 20px;
 }
 
 footer {
@@ -107,7 +154,6 @@ footer {
     padding: 25px;
     text-align: bottom;
     align-items: bottom;
-    border: 2px solid red
 }
 
 footer img {
@@ -123,6 +169,7 @@ h3 {
     height: 100%;
     align-items: bottom;
     align-content: bottom;
-    border: 2px solid red;
-
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top:22px;
 }
