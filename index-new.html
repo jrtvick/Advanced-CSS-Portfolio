@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--Linked both the reset and style CSS sheets, as well as added a descriptive title.-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style-new.css">
-    <title>Document</title>
+    <title>Tyler Vick's Web Development Portfolio</title>
 </head>
+
+<!--I wrapped the entire webpage in a body tag.-->
 <body>
+
+<!--I decided to place my title and navigation bar both into my header.-->
     <header>
         <h1>Tyler Vick's Portfolio</h1>
         <nav>
@@ -19,32 +25,47 @@
             </ul>
         </nav>
     </header>
+
+<!--I chose the main tags to represent the overall body of my webpage, IE the content that my navbar links to.-->
     <main>
-        <section id="about-me">
+
+<!--I broke the three portions of the webpage up into section tags.-->
+        <section id="about">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut sint error non minima nesciunt minus omnis laborum, quisquam, delectus perferendis voluptatibus suscipit ducimus magni ipsum. Libero atque quaerat maxime sapiente?</p>
+            <p>My name is Tyler and I'm pursuing a career in web development! I am currently enrolled in a full stack web development bootcamp and am in the process of learning HTML, CSS, and JavaScript. Expect this portfolio to be updated regularly! </p>
+            <img src="../Advanced-CSS-Portfolio/assets/images/avatar.jpg" alt="Picture of Tyler and his dog.">
         </section>
+
+<!--In order to get my project section to work properly, many different children were needed to accomplish the acceptance criteria. Also added button tags for futher styling capabilities.-->
         <section id="my-work">
             <h2 id="work">My Work</h2>
             <div id="projects">
-
-                <div id="big-proj"> <img class="project-image" id="image" src="../Advanced-CSS-Portfolio/assets/javascript.png" alt="javaScript card"></div>
+                <div id="big-proj"><h3>javaScript</h3><a href="https://github.com/jrtvick/Javascript-Password-Generator"><button><img class="project-image" src="../Advanced-CSS-Portfolio/assets/images/javascript.png" alt="javaScript card"></button></a></div>
                 <div id="grid">
-                    <div><img class="project-image" src="../Advanced-CSS-Portfolio/assets/CSS.png" alt="CSS card"></div>
-                    <div><img class="project-image" src="../Advanced-CSS-Portfolio/assets/Refactoring.jpg" alt="Refactoring card"></div>
-                    <div><img class="project-image" src="../Advanced-CSS-Portfolio/assets/git.png" alt="Git card"></div>
-                    <div><img class="project-image" src="../Advanced-CSS-Portfolio/assets/github.png" alt="Github card"></div>
+                    <div><h3>CSS</h3><button><a href="https://jrtvick.github.io/advanced-css-portfolio/"><img class="project-image" src="../Advanced-CSS-Portfolio/assets/images/CSS.png" alt="CSS card"></button></a></div>
+                    <div><h3>Refactoring</h3><button><a href="https://jrtvick.github.io/refactoring/"><img class="project-image" src="../Advanced-CSS-Portfolio/assets/images/Refactoring.jpg" alt="Refactoring card"></a></button></div>
+                    <div><h3>Git Sample</h3><button><a href="https://github.com/jrtvick/git-init-sample"><img class="project-image" src="../Advanced-CSS-Portfolio/assets/images/git.png" alt="Git card"></a></button></div>
+                    <div><h3>Github Profile</h3><button><a href="https://github.com/jrtvick"><img class="project-image" src="../Advanced-CSS-Portfolio/assets/images/github.png" alt="Github card"></a></button></div>
                 </div>
             </div>
         </section>
+
+<!--I wanted all the content in my contact section to link to different ways to contact me, rather than just displaying the information.-->
         <section>
             <h2 id="contact">Contact</h2>
+                <aside>
+                    <h4><a href="tel:14163715101">Phone</a></h4>
+                    <h4><a href="mailto:jrtvick@gmail.com">Email</a></h4>
+                    <h4><a href="https://github.com/jrtvick" target="_blank" rel="noopener noreferrer">Github</a></h4>
+                </aside>
         </section>
     </main>
+
+<!--Footer is here, just to show the bottom of the webpage and add some structure to the page.-->
     <footer>
-        <img src="./assets/bear.png" alt="cartoon teddy bear">
-        <h3> &copy; Tyler Vick, 2023</h3>
-        <img src="./assets/bear.png" alt="cartoon teddy bear">
+        <img src="./assets/images/bear.png" alt="cartoon teddy bear">
+        <h5> &copy; Tyler Vick, 2023</h5>
+        <img src="./assets/images/bear.png" alt="cartoon teddy bear">
     </footer>
 </body>
 </html>
