@@ -173,6 +173,7 @@ h4 a {
 h4 a:hover {
     box-shadow: inset 170px 0 0 0 hotpink;
     color: black;
+    cursor: crosshair;
 }
 
 /* This is pure style with absolutely no real function. Just wanted to make the bottom of the page look fun and give it structure. */
