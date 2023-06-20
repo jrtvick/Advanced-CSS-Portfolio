@@ -127,6 +127,7 @@ button img:hover {
 
 .project-image {
    width: 100%;
+   object-fit: cover;
 }
 
 .project-image:hover {
